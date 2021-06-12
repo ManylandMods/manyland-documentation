@@ -3,7 +3,7 @@ The **manyland.js** file contains all of the source code for Manyland. It is whe
 
 The name of the **manyland.js** file has its version number appended to the name (e.g ```manyland.js?v=5798```).
 
-# Accessing Manyland.js
+## Accessing Manyland.js
 
 To access **manyland.js**, open the developer tools in your browser (typically done with **F12** or **CTRL+SHIFT+J**). 
 
@@ -26,3 +26,23 @@ The code should now look similar to this:
 <img src="https://i.gyazo.com/f81f88d83bc3415c71b525d03475adf7.png"/>
 </div>
 
+## Your First Mod
+
+A good way to get started with **modding** is to find a variable and try to manipulate it to see what happens.
+
+As an example, try modifying the **gravity variable**. Go to the console tab and type ```ig.game.gravity = 400``` and then press enter. You will now notice that when you jump you go significantly higher.
+
+As a challenge, try to find the variable that holds your Y coordinate and modify it.
+
+## Notes
+<ul>
+    <li>There are a few things to note when you start modding: 
+        <ul>
+            <li>Log out of your account</li>
+            <li>Use a VPN if possible</li>
+            <li>Never attempt to modify account rank or editor status</li>
+            <li>Utilize breakpoints and stepping into functions in developer tools</li>
+            <li>Words that are highlighted repeatedly are important concepts</li>
+            <li>It is highly recommended that you learn JavaScript</li>
+        </ul>
+    </li>
