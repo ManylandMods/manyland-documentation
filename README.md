@@ -2,7 +2,7 @@
 
 **Obfuscation** is the obscuring of code by making it difficult to **read**, **understand**, and **use**. 
 
-Manyland uses **obfuscation** to prevent users from making **mods** (short for **modifications**).
+Manyland uses **obfuscation** and **minification** to prevent users from making **mods** (short for **modifications**) and to decrease file sizes for faster loading.
 
 ## Manyland's Obfuscation
 
