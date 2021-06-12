@@ -1,13 +1,28 @@
-## What is Obfuscation?
+## Manyland.js
+The **manyland.js** file contains all of the source code for Manyland. It is where you will be spending most of your time when trying to understand how the game works.
 
-**Obfuscation** is the obscuring of code by making it difficult to **read**, **understand**, and **use**. 
+The name of the **manyland.js** file has its version number appended to the name (e.g ```manyland.js?v=5798```).
 
-Manyland uses **obfuscation** and **minification** to prevent users from making **mods** (short for **modifications**) and to decrease file sizes for faster loading.
+# Accessing Manyland.js
 
-## Manyland's Obfuscation
+To access **manyland.js**, open the developer tools in your browser (typically done with **F12** or **CTRL+SHIFT+J**). 
 
-Manyland uses **obfuscation** by renaming important object, variable, and function names to random numbers preceded by a capital O. 
+Head over to the sources tab and then click the manyland.com drop down.
 
-The randomly generated names will change every update, which results in making mods useless if **deobfuscation** was not utilized.
+<div align=center>
+<img src="https://i.gyazo.com/84d7ad21fa59c4c2dda2c6be123fef51.png"/>
+</div>
 
-An example of **obfuscation** in Manyland is the **player object**. The name of the **player object** in version 5798 of manyland.js is ```ig.game.O65```
+Click the **manyland.js** file to see the code behind Manyland. To make things easier to read, click the two curly brackets in the bottom left to beautify the code.
+
+<div align=center>
+<img src="https://i.gyazo.com/72e3d08a47bd0ed848a4732f9f0bed71.png"/>
+</div>
+
+
+The code should now look similar to this:
+
+<div align=center>
+<img src="https://i.gyazo.com/f81f88d83bc3415c71b525d03475adf7.png"/>
+</div>
+
