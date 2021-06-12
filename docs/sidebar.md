@@ -1,4 +1,5 @@
 - [Basics](/)
 - [Obfuscation](obfuscation)
+- [Manyland's Code](manylandcode)
 - **Links**
 - [Github](https://github.com/ManylandMods)

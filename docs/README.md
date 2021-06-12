@@ -1,7 +1,7 @@
 ## Manyland.js
 The **manyland.js** file contains all of the source code for Manyland. It is where you will be spending most of your time when trying to understand how the game works.
 
-The name of the **manyland.js** file has its version number appended to the name (e.g ```manyland.js?v=5798```).
+The name of the **manyland.js** file has its version number appended to the file (e.g ```manyland.js?v=5798```).
 
 ## Accessing Manyland.js
 
