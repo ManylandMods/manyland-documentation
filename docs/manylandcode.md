@@ -8,6 +8,24 @@ It is highly recommended that you go through the documentation of **impact.js**,
 
 The **local player object** relates to everything that has to do with your character. 
 
-With Parse's **deobfuscator**, you can access the local player object by typing ```ig.game.player``` into the console. This will list all properties that have to do with your player.
+With Parse's **deobfuscator**, you can access the local player object by typing ```ig.game.player``` into the console. This will list all properties related to your player.
 
-Some important properties to note are **id**, **isEditorHere**, and
+An important property to note is **id**. All items and players in Manyland have a 24 character id (often referenced as **rid** in manyland.js for players). A significant amount of Manyland's id checks are **client-sided**, which means it is possible to do things such as edit creations that are not yours via messing around with ids (even without the cloneable attribute).
+
+## Player Array
+
+The **player array** is an array of all player objects currently connected to the world. Each **player object** is structured similarly to the **local player object**. You can access information about other players using the player array (e.g coordinates, name, and id).
+
+With Parse's **deobfuscator**, you can access the player array using ```ig.game.players```.
+
+An example code snippet that prints all player names and their respective coordinates:
+
+```js
+ig.game.players.forEach(player => {
+    consoleref.log(`${player.screenName} | ${player.pos.x}, ${player.pos.y}`);
+});
+```
+
+## Block Array
+
+The **block array** is an array of all item objects that you have loaded in. Some important attributes of an item object are **base** (item type), **creatorId**, **id**, and **name**.

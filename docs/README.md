@@ -42,7 +42,7 @@ As a challenge, try to find the variable that holds your Y coordinate and modify
             <li>Use a VPN if possible</li>
             <li>Never attempt to modify account rank or editor status</li>
             <li>Utilize breakpoints and stepping into functions in developer tools</li>
-            <li>Words that are highlighted repeatedly are important concepts</li>
+            <li>Words that are bolded repeatedly throughout the documentation are important concepts</li>
             <li>It is highly recommended that you learn JavaScript</li>
         </ul>
     </li>
