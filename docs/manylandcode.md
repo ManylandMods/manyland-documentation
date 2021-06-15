@@ -4,6 +4,12 @@
 
 It is highly recommended that you go through the documentation of **impact.js**, as becoming familiar with it will greatly improve your ability to create **mods** (https://impactjs.com/documentation). It will also save you a significant amount of time when it comes to reading **manyland.js**.
 
+## Console
+
+As a **mod** developer, one of your most useful assets will be logging to the console. **manyland.js** overrides the default console object with **consoleref**. 
+
+To log to the console, type ```consoleref.log("example")``` instead of ```console.log("example")```
+
 ## Local Player Object
 
 The **local player object** relates to everything that has to do with your character. 
@@ -29,3 +35,9 @@ ig.game.players.forEach(player => {
 ## Block Array
 
 The **block array** is an array of all item objects that you have loaded in. Some important attributes of an item object are **base** (item type), **creatorId**, **id**, and **name**.
+
+Block array ID and block placement checks are also **client-sided**.
+
+
+## Dialogue
+
