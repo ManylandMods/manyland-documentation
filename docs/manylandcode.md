@@ -40,5 +40,32 @@ Block array ID and block ID placement checks are also **client-side**.
 
 With Parse's **deobfuscator**, you can access the block array by typing ```ig.game.blocks``` into the console.
 
-## Dialogue
+## Dialog
+
+**Dialog** boxes in Manyland are popups such as player profiles, alerts, writables, and so forth. Understanding dialog in Manyland is extremely important for developing **mods**. 
+
+I will be covering two of the most important dialogs in Manyland for mod development: **alertDialog** and **playerDialog**.
+
+Call ```ig.game.alertDialog.open();``` to create an alert dialog. The function open() takes 13 arguments, but only the first argument is required:
+
+```js
+/**
+ * @param   a   the HTML or plain text to display
+ * @param   b   a boolean determing if param a is parsed as HTML or not
+ * @param   c   callback function for the close button
+ * @param   d   text to display inside of the close button  
+ * @param   e   boolean that enlarges the dialog size
+ * @param   f   boolean that moves the close button to the top right
+ * @param   g   boolean that determines if the dialog is opaque
+ * @param   h   boolean that determines if the dialog is long/on left side of the screen
+ * @param   k   boolean that determines if the dialog is at the top of the screen
+ * @param   l   boolean that determines if Y overflow is hidden or not
+ * @param   m   boolean that determines if the dialog is completely transparent
+ * @param   n   boolean that determines if the dialog has a small rectangle shape
+ */
+
+ig.game.alertDialog.open(a, b, c, d, e, f, g, h, k, l, m, n);
+```
+
+
 
