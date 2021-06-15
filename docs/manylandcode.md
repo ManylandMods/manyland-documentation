@@ -16,7 +16,7 @@ The **local player object** relates to everything that has to do with your chara
 
 With Parse's **deobfuscator**, you can access the local player object by typing ```ig.game.player``` into the console. This will list all properties related to your player.
 
-An important property to note is **id**. All items and players in Manyland have a 24 character id (often referenced as **rid** in manyland.js for players). A significant amount of Manyland's id checks are **client-sided**, which means it is possible to do things such as edit creations that are not yours via messing around with ids (even without the cloneable attribute).
+An important property to note is **id**. All items and players in Manyland have a 24 character id (often referenced as **rid** in manyland.js for players). A significant amount of Manyland's id checks are **client-side**, which means it is possible to do things such as edit creations that are not yours via messing around with ids (even without the cloneable attribute).
 
 ## Player Array
 
@@ -36,8 +36,9 @@ ig.game.players.forEach(player => {
 
 The **block array** is an array of all item objects that you have loaded in. Some important attributes of an item object are **base** (item type), **creatorId**, **id**, and **name**.
 
-Block array ID and block placement checks are also **client-sided**.
+Block array ID and block ID placement checks are also **client-side**.
 
+With Parse's **deobfuscator**, you can access the block array by typing ```ig.game.blocks``` into the console.
 
 ## Dialogue
 
