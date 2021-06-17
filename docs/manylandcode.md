@@ -67,5 +67,31 @@ Call ```ig.game.alertDialog.open();``` to create an alert dialog. The function o
 ig.game.alertDialog.open(a, b, c, d, e, f, g, h, k, l, m, n);
 ```
 
+A very simple example of using **ig.game.alertDialog.open()** and Parse's **deobfuscator**:
 
+```js
+async function main() {
+    await $.getScript("https://cdn.jsdelivr.net/gh/parseml/many-deobf@latest/deobf.js");
 
+    ig.game.alertDialog.open(`
+    <style>
+    body {
+        margin-top: 25px;
+    }
+    </style>
+    <b>Manyland Documentation Example</b>
+    <p class="miftThankYouMessage">Enter a player's name to teleport to: </p>
+    <input type="text" id="pName"></input>
+    `, 
+    true,
+    () => {
+        playerName = document.getElementById("pName").value
+        updatePlayers();
+        let player = ig.game.players.filter(p => p.screenName == playerName);
+        ig.game.player.pos = player[0].pos;
+    },
+    "Tele", null, null, null, null, null, null, null, true);
+}
+
+main();
+```
